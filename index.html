@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jay S — Developer & Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Ambient cursor glow -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <nav class="container">
+      <a href="#home" class="logo">JS<span>.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="aurora aurora-1"></div>
+      <div class="aurora aurora-2"></div>
+      <div class="aurora aurora-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="container hero-inner">
+      <div class="hero-content reveal">
+        <p class="hero-label">Web Developer &amp; Designer</p>
+        <h1>I craft digital<br/>experiences that <span class="gradient-text">matter</span>.</h1>
+        <p class="hero-desc">
+          Building clean, performant websites with modern technologies.
+          Passionate about turning complex problems into elegant solutions.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View My Work<span class="btn-arrow">→</span></a>
+          <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="code-block">
+          <div class="code-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <pre><code><span class="kw">const</span> <span class="fn">developer</span> = {
+  <span class="prop">name</span>: <span class="str">"Jay S"</span>,
+  <span class="prop">skills</span>: [<span class="str">"HTML"</span>, <span class="str">"CSS"</span>, <span class="str">"JS"</span>],
+  <span class="prop">passion</span>: <span class="str">"Building things"</span>,
+  <span class="fn">greet</span>() {
+    <span class="kw">return</span> <span class="str">`Let's build!`</span>;
+  }
+};</code></pre>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator reveal">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <div class="marquee-group">
+        <span>Web Development</span><i>✦</i>
+        <span>UI Design</span><i>✦</i>
+        <span>JavaScript</span><i>✦</i>
+        <span>React</span><i>✦</i>
+        <span>Responsive Design</span><i>✦</i>
+        <span>Vue.js</span><i>✦</i>
+        <span>Git &amp; GitHub</span><i>✦</i>
+      </div>
+      <div class="marquee-group">
+        <span>Web Development</span><i>✦</i>
+        <span>UI Design</span><i>✦</i>
+        <span>JavaScript</span><i>✦</i>
+        <span>React</span><i>✦</i>
+        <span>Responsive Design</span><i>✦</i>
+        <span>Vue.js</span><i>✦</i>
+        <span>Git &amp; GitHub</span><i>✦</i>
+      </div>
+    </div>
+  </div>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content reveal">
+          <p class="section-label"><span class="label-num">01</span>About Me</p>
+          <h2>A little bit<br/>about myself</h2>
+          <p>
+            I'm a passionate web developer based in Bontoc, Southern Leyte. I specialize in
+            building modern websites using HTML, CSS, and JavaScript. I enjoy
+            solving problems and continuously learning new technologies.
+          </p>
+          <p>
+            When I'm not coding, you'll find me exploring tech blogs,
+            contributing to open source, or drinking too much coffee.
+          </p>
+          <a href="#contact" class="btn btn-primary">Let's Talk<span class="btn-arrow">→</span></a>
+        </div>
+        <div class="about-stats reveal">
+          <div class="stat-card">
+            <span class="stat-number" data-count="2" data-suffix="+">0+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-count="15" data-suffix="+">0+</span>
+            <span class="stat-label">Projects Done</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-count="10" data-suffix="+">0+</span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label"><span class="label-num">02</span>What I Do</p>
+        <h2>Skills &amp; Tools</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          </div>
+          <h3>HTML &amp; CSS</h3>
+          <p>Semantic markup, Flexbox, Grid, animations, and modern layouts.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+          </div>
+          <h3>JavaScript</h3>
+          <p>ES6+, DOM manipulation, async/await, APIs, and modern frameworks.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+          </div>
+          <h3>React</h3>
+          <p>Components, hooks, state management, and component architecture.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+          </div>
+          <h3>Git &amp; GitHub</h3>
+          <p>Version control, collaboration workflows, and CI/CD pipelines.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+          </div>
+          <h3>Responsive Design</h3>
+          <p>Mobile-first layouts that work beautifully across all devices.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+          </div>
+          <h3>UI / UX</h3>
+          <p>Clean interfaces and intuitive user experiences.</p>
+        </div>
+      </div>
+
+      <div class="stack-block reveal">
+        <h3 class="stack-title">Languages &amp; Frameworks</h3>
+        <div class="stack-cloud">
+          <span class="stack-chip">JavaScript</span>
+          <span class="stack-chip">HTML</span>
+          <span class="stack-chip">CSS</span>
+          <span class="stack-chip">React</span>
+          <span class="stack-chip">Vue.js</span>
+          <span class="stack-chip">Node.js</span>
+          <span class="stack-chip">Express</span>
+          <span class="stack-chip">Laravel</span>
+          <span class="stack-chip">PHP</span>
+          <span class="stack-chip">SQLite</span>
+          <span class="stack-chip">PWA</span>
+          <span class="stack-chip">Flutter</span>
+          <span class="stack-chip">Dart</span>
+          <span class="stack-chip">Git</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label"><span class="label-num">03</span>Selected Work</p>
+        <h2>Featured Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <article class="project-card project-featured reveal">
+          <div class="project-preview preview-landscape">
+            <div class="preview-inner">
+              <span class="preview-badge">Featured</span>
+              <div class="preview-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <h3>Landscape Studio</h3>
+              <span class="project-type">Business Website</span>
+            </div>
+            <p>
+              A field-notes inspired single-page site for a landscaping company.
+              Warm natural palette, botanical SVG illustrations, and an editorial "field guide" aesthetic.
+              No image dependencies — all visuals are pure SVG/CSS.
+            </p>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>SVG</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" rel="noopener" class="link-arrow">Live Demo<span class="link-move">→</span></a>
+              <a href="https://github.com/Yajzkie/landscape-website" target="_blank" rel="noopener" class="link-arrow">View Code<span class="link-move">→</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card project-featured reveal">
+          <div class="project-preview preview-opo">
+            <div class="preview-inner">
+              <span class="preview-badge">Featured</span>
+              <div class="preview-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <h3>OPOfpv</h3>
+              <span class="project-type">Cinematic FPV Services</span>
+            </div>
+            <p>
+              A cinematic FPV drone services website with video-driven hero, OSD chrome overlay,
+              project video gallery, and Supabase backend for contact form submissions.
+              Built with Vue.js and dynamic service cards.
+            </p>
+            <div class="tags">
+              <span>Vue.js</span><span>Supabase</span><span>HTML</span><span>CSS</span><span>Video</span>
+            </div>
+            <div class="project-links">
+              <a href="https://opo-fpv1.vercel.app" target="_blank" rel="noopener" class="link-arrow">Live Demo<span class="link-move">→</span></a>
+              <a href="https://github.com/Yajzkie/opofpv" target="_blank" rel="noopener" class="link-arrow">View Code<span class="link-move">→</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-preview preview-barya">
+            <div class="preview-inner">
+              <div class="preview-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <h3>Barya — Expense Tracker</h3>
+              <span class="project-type">PWA · React</span>
+            </div>
+            <p>Offline-first personal expense tracker with charts, local storage via IndexedDB, and a Node/Express backend with SQLite.</p>
+            <div class="tags"><span>React</span><span>Express</span><span>SQLite</span><span>PWA</span><span>Recharts</span></div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener" class="link-arrow">Live Demo<span class="link-move">→</span></a>
+              <a href="https://github.com/Yajzkie/expenses-app" target="_blank" rel="noopener" class="link-arrow">View Code<span class="link-move">→</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-preview preview-store">
+            <div class="preview-inner">
+              <div class="preview-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <h3>StorePro — Store Dashboard</h3>
+              <span class="project-type">Full-Stack · React</span>
+            </div>
+            <p>Store inventory and monthly sales dashboard with data visualization, backed by Express and SQLite.</p>
+            <div class="tags"><span>React</span><span>Express</span><span>SQLite</span><span>Recharts</span><span>Vite</span></div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener" class="link-arrow">Live Demo<span class="link-move">→</span></a>
+              <a href="https://github.com/Yajzkie/store-app" target="_blank" rel="noopener" class="link-arrow">View Code<span class="link-move">→</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-preview preview-quest">
+            <div class="preview-inner">
+              <div class="preview-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <h3>Task Quest</h3>
+              <span class="project-type">Gamified Task Manager</span>
+            </div>
+            <p>A gamified to-do app with a full RPG player profile — completing tasks on time and by priority earns XP, with 7-day streak bonuses driving a level-up system. Categories, tags, and search for organization.</p>
+            <div class="tags"><span>TypeScript</span><span>Express</span><span>SQLite</span><span>Node.js</span></div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener" class="link-arrow">Live Demo<span class="link-move">→</span></a>
+              <a href="https://github.com/Yajzkie/task-quest" target="_blank" rel="noopener" class="link-arrow">View Code<span class="link-move">→</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-preview preview-solo">
+            <div class="preview-inner">
+              <div class="preview-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <h3>Solo Fit</h3>
+              <span class="project-type">Flutter · Mobile</span>
+            </div>
+            <p>An anime RPG fitness app where working out levels up your character from E to SSS rank. GPS-tracked runs, live rep counting via ML Kit pose detection, weight logging, yoga, and a quest log with XP charts.</p>
+            <div class="tags"><span>Flutter</span><span>Dart</span><span>ML Kit</span><span>GPS</span><span>Provider</span></div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener" class="link-arrow">Live Demo<span class="link-move">→</span></a>
+              <a href="https://github.com/Yajzkie/solo-fit" target="_blank" rel="noopener" class="link-arrow">View Code<span class="link-move">→</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-preview preview-barya-app">
+            <div class="preview-inner">
+              <div class="preview-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <h3>Barya — Native App</h3>
+              <span class="project-type">Flutter · Android/iOS</span>
+            </div>
+            <p>Native companion to the Barya web app. Fully offline expense tracking with on-device SQLite storage, a monthly coin-jar dashboard, category breakdowns, and charts in the same espresso-and-gold theme.</p>
+            <div class="tags"><span>Flutter</span><span>Dart</span><span>SQLite</span><span>sqflite</span></div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener" class="link-arrow">Live Demo<span class="link-move">→</span></a>
+              <a href="https://github.com/Yajzkie/barya-flutter" target="_blank" rel="noopener" class="link-arrow">View Code<span class="link-move">→</span></a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p class="section-label"><span class="label-num">04</span>Get In Touch</p>
+          <h2>Let's work<br/>together</h2>
+          <p class="contact-desc">
+            Have a project in mind or just want to say hi? My inbox is always open.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:yaj143sabalo@gmail.com" class="contact-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              yaj143sabalo@gmail.com
+            </a>
+            <a href="https://github.com/Yajzkie" target="_blank" rel="noopener" class="contact-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              github.com/Yajzkie
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              linkedin.com/in/Jay Sabalo
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal">
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message<span class="btn-arrow">→</span></button>
+          </form>
+          <p id="formStatus" class="form-status"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-wordmark" aria-hidden="true">Jay&nbsp;S<span>.</span></div>
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <a href="#home" class="logo">JS<span>.</span></a>
+        <p>Built with plain HTML, CSS &amp; JS.</p>
+      </div>
+      <div class="footer-right">
+        <div class="socials">
+          <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+          <a href="mailto:you@example.com" aria-label="Email">Email</a>
+        </div>
+        <p class="copy">&copy; 2026 Jay S. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
