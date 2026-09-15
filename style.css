@@ -611,6 +611,13 @@ ul { list-style: none; }
 .link-arrow:hover { color: var(--accent-2); }
 .link-arrow:hover .link-move { transform: translateX(4px); }
 
+.coming-soon {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-3);
+  cursor: default;
+}
+
 /* ========== GLASS CARD ========== */
 .glass-card {
   width: 240px;
